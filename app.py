@@ -15,15 +15,12 @@ def aml():
           "input1": [
   
             {
-              "Pregnancies": 0,
-              "Glucose": 100,
-              "BloodPressure": 40,
-              "SkinThickness": 35,
-              "Insulin": 168,
-              "BMI": 70.1,
-              "DiabetesPedigreeFunction": 2.288,
-              "Age": 39,
-              "Outcome": 1
+              "SeriousDlqin2yrs": 0,
+              "RevolvingUtilizationOfUnsecuredLines": 0.9072394,
+              "age": 49,
+              "NumberOfTime30-59DaysPastDueNotWorse": 1,
+              "DebtRatio": 0.024925695,
+              "MonthlyIncome": "63588",
             }
           ]
         },
@@ -38,7 +35,7 @@ def aml():
             'Accept':'application/json',
             'Authorization':('Bearer' + api_key)
             }
-    req = urllib.request.Request(url, data, headers)
+    req = urllib.request.Request(url, budy, headers)
 
     htmlstr = '<html><body>'
 
